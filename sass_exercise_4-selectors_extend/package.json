@@ -1,0 +1,15 @@
+{
+  "name": "sass_exercise_4-selectors_extend",
+  "version": "1.0.0",
+  "description": "Modify the exercise 3 code about functions using the parent selector `&` for nested classes. Style the `h2` that will have the same rules of `h1`, and an additional 1rem padding and a red border. In order to style the `h1` and `h2` use the extend method.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style.scss:style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}

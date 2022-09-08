@@ -1,0 +1,16 @@
+{
+  "name": "sass_exercise_2-mixin",
+  "version": "1.0.0",
+  "description": "Create the layout displayed in the picture. Try to use a mixin in order to apply the style of the `article` tags. The mixin should take in 3 parameters:\r 1. color\r 2. border-color\r 3. font-size",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style.scss:style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}

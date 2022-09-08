@@ -1,0 +1,62 @@
+$color:red;
+$border-color:green;
+$font-size: 24px;
+
+@mixin box($color,$border-color) {
+    border: 1px solid $border-color;
+    color: $color;
+    
+}
+
+
+div{
+
+    border: 1px solid $color;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: .5rem;
+    
+   
+
+    h1{
+        color: $border-color;
+        text-decoration: underline;
+       
+    }
+    section{
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        margin: 0 2rem;
+        &:last-child{
+            article{
+                &:first-child{
+                @include box(green, blue);
+                margin: 2rem auto;
+            }
+            }
+            
+        }
+        
+        article{
+            &:nth-child(1){
+                @include box(blue, green);
+            }
+            &:nth-child(2){
+                @include box(red, green);
+            }
+            &:nth-child(3){
+                @include box(blue, green);
+            }
+            &:nth-child(4){
+                @include box(red, green);
+            }
+        }
+        
+    }
+
+}

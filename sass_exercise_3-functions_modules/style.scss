@@ -1,0 +1,76 @@
+@use "module.scss";
+
+
+
+
+$red-color:module.$color;
+$border:module.$border-color;
+
+
+@mixin box($red-color,$border) {
+    border: 1px solid $border;
+    color: $red-color;
+    
+}
+@function font( $font-size: module.$font-size){
+
+    $turn: calc($font-size / 16px) + rem;
+  
+    @return $turn;
+
+}
+
+
+div{
+
+    border: 1px solid $red-color;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: .5rem;
+    
+   
+
+    h1{
+        color: $border;
+        text-decoration: underline;
+        text-decoration-color: blue ;
+       
+    }
+    section{
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        margin: 0 2rem;
+        &:last-child{
+            article{
+                &:first-child{
+                @include box(green, blue);
+                margin: 2rem auto;
+                font-size: font(24px);
+            }
+            }
+            
+        }
+        
+        article{
+            &:nth-child(1){
+                @include box(blue, green);
+            }
+            &:nth-child(2){
+                @include box(red, green);
+            }
+            &:nth-child(3){
+                @include box(blue, green);
+            }
+            &:nth-child(4){
+                @include box(red, green);
+            }
+        }
+        
+    }
+
+}
