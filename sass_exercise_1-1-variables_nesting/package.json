@@ -1,0 +1,17 @@
+{
+  "name": "sass_exercise_1-variables_nesting",
+  "version": "1.0.0",
+  "description": "Create the layout displayed in sass_exercise_1_layout.jpg using the rules nesting and the Sass Variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch style.scss:style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.8"
+  }
+}
+ 

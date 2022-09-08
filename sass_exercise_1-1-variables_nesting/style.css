@@ -1,0 +1,23 @@
+div {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div h1 {
+  color: green;
+  text-decoration: underline;
+  font-size: 3rem;
+  text-decoration-color: blue;
+}
+div section {
+  border: 1px solid green;
+  display: flex;
+  margin: 1rem 3rem;
+}
+div section article {
+  border: 1px solid green;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
