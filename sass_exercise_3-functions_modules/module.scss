@@ -1,0 +1,10 @@
+$color:red;
+$border-color:green;
+$font-size: 24px ;
+@function font( $font-size: $font-size){
+
+    $turn: calc($font-size / 16px) + rem;
+  
+    @return $turn;
+
+}
